@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="shortcut icon" type="image/png" href="images/google_favicon.png" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body onload="setTimeout(openPopup, 10000)">
+    <div id="page">
+
+      <div id="header">
+        <div id="menu">
+          <nav>
+            <ul>
+              <li><a href="#">Gmail</a></li>
+              <li><a href="images/rené.jpg" target="_blank">Images</a></li>
+              <li><a href="#"><i class="material-icons">apps</i></a></li>
+              <li><a href="#"><i class="material-icons">notifications</i></a></li>
+              <li><a href="#"><div id="profile">R</div></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div id="main">
+        <div id="logo-home">
+          <div id="logo-texte"><p>France</p></div>
+        </div>
+        <div id="recherche">
+          <form>
+            <div id="searchbox">
+              <input type="text" name="terms" value="" id="form_search" style="font-size: 17px;
+              font-family: arial, sans-serif; outline: none"/>
+              <i class="material-icons" id="mic" style="color: #777;">mic</i>
+            </div>
+          </form>
+          <div id="boutons">
+            <input type="submit" name="" value="Recherche Google" class="btn" id="rech">
+            <input type="submit" name="" value="J'ai de la chance" class="btn">
+          </div>
+        </div>
+      </div>
+
+      <div id="popup-bg">
+        <div id="popup-window">
+          <h2>Découvre les filles chaudes de ta région</h2>
+          <p id="close-popup" onclick="closePopUp()">fermer</p>
+          <a href="images/nope.jpg"><img src="images/girl.png" alt="gta girl" id="girl-image"></a>
+        </div>
+      </div>
+
+      <footer>
+        <span class="footer-txt">
+          <a href="#">Publicité</a>
+          <a href="#">Entreprise</a>
+          <a href="#">À propos</a>
+        </span>
+        <span class="footer-txt">
+          <a href="#">Confidentialité</a>
+          <a href="#">Conditions</a>
+          <a href="#">Paramètres</a>
+        </span>
+      </footer>
+    </div>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>
